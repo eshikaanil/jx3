@@ -33,10 +33,12 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: eshikaanil
+    repository: jx3
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: jx.docure.ai
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -nginx.
@@ -44,6 +46,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: eshikaanil
   repository: bucketrepo
   secretStorage: local
   vault: {}
